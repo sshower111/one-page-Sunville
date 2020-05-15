@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewpoint" content="width = device-width, initial-scale = 1">
     <title>Sunville Bakery</title>
 </head>
 <body>
@@ -10,29 +11,24 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li class="mobile"><a href="location.html">Location</a></li>
-                <li class="mobile"><a class="currentPage" href="contact.html">Contact</a></li>
+                <li class="mobile"><a href="location.html#map">Location</a></li>
+                <li class="mobile"><a class="currentPage" href="#contactForm#contactForm">Contact Us</a></li>
                 <li class="logo"><a href="index.html">Sunville Bakery Logo</a></li>
-                <li class="desktop"><a href="location.html">Location</a></li>
-                <li class="desktop"><a class="currentPage" href="contact.html">Contact</a></li>
+                <li class="desktop"><a href="location.html#map">Location</a></li>
+                <li class="desktop"><a class="currentPage" href="#contactForm#contactForm">Contact Us</a></li>
                </ul>
         </nav>
-        <h1>Contact</h1>
+        <h1 style="margin-top: 10%;">Contact</h1>
     </header>
-    <section class="features">
-        <figure>
-            <img src="images/buns/hamNEggBun.jpg" alt="">
-            <figcaption>Ham & Egg Bun</figcaption>
-        </figure>
-        <figure>
-            <img src="images/buns/smallSausageBun.jpg" alt="">
-            <figcaption>Small Sausage Bun</figcaption>
-        </figure>
-        <figure>
-            <img src="images/breads/coconutBread.jpg" alt="">
-            <figcaption>Coconut Bread</figcaption>
-        </figure>
-    </section>
-    <footer>4053 Spring Mountain Road, Las Vegas, NV, 89102 • 702-889-9887 • sunvillebakerylv@gmail.com</footer>
+    <h2 style="text-align: center; color: rgba(255, 0, 0, 0.699);">Contact Us</h2>
+    <div class="border"></div>
+    <form id="contactForm" action="contact-form-handler.php" class="contact-form" method="POST">
+        <input name="name" type="text" class="contact-form-text" placeholder="Your Name">
+        <input name="email" type="text" class="contact-form-text" placeholder="Your Email">
+        <textarea name="message" class="contact-form-text" placeholder="Your Message"></textarea>
+        <div style="text-align: center;"><input type="button" class="contact-form-btn" value="Send"></div>
+    </form>
+
+    <footer>4053 Spring Mountain Road, Las Vegas, NV, 89102 • 702-889-9887 • <a class="footerEmail" href="mailto:sunvillebakerylv@gmail">sunvillebakerylv@gmail.com</a></footer>
 </body>
 </html>

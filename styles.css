@@ -3,7 +3,7 @@ body {
     color: black;
     padding: 0;
     margin: 0;
-    font-family: Georgia, Helvetica, Arial, sans-serif;
+    font-family: Avenir, Georgia, Helvetica, Arial, sans-serif;
 }
 
 header {
@@ -61,7 +61,9 @@ h1 {
     color: white;
 }
 
-.features {
+/* Features */
+
+/* .features {
     background: white;
     color: gray;
     padding: 20px;
@@ -75,13 +77,73 @@ h1 {
     width: 200px;
     text-transform: uppercase;
     text-align: center;
-}
+} */
 
-.features figure img {
+/* .features figure img {
     border: 1px solid white;
     border-radius: 10%;
     box-shadow: gray 0 0 10px;
     width: 200px;
+} */
+
+.contact-section {
+    background: gray;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-section h1 {
+    text-align: center;
+    color: white;
+
+}
+
+.border {
+    width: 100px;
+    height: 10px;
+    background: gray;
+    margin: 40px auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 18px 0;
+    border: solid gray 2px;
+    background: white;
+    padding: 20px 40px;
+    outline: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+textarea.contact-form-text {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn {
+    float: right;
+    border: 0;
+    background: gray;
+    color: white;
+    padding: 12px 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.contact-form-btn:hover {
+    background: black;
 }
 
 footer {
@@ -91,6 +153,11 @@ footer {
     text-transform: uppercase;
     color: white;
     text-align: center;
+}
+
+.footerEmail {
+    text-decoration: none;
+    color: white;
 }
 
 /* RESPONSIVE RULES */
@@ -116,7 +183,8 @@ footer {
 
 .map-responsive{
     overflow: hidden;
-    padding-bottom: 30%;
+    margin: -20px 20% 0px 20%;
+    padding: 20%;
     position: relative;
 
 }
