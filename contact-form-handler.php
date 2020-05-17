@@ -3,23 +3,23 @@
     $email = $_POST['email'];
     $msg = $_POST['message'];
 
-    $emailFrom = 'sunvillebakerylv@gmail.com';
+    $email_from = 'sunvillebakerylv@gmail.com';
 
-    $emailSubject = "New Form Submission";
+    $email_subject = "New Form Submission";
 
-    $emailBody = "User Name: $name.\n".
-                    "User Email: $customerEmail.\n".
+    $email_body = "User Name: $name.\n".
+                    "User Email: $email.\n".
                         "User Message: $msg.\n";
 
-    $to = "sunvillebakerylv#gmail.com"
+    $to = "sunvillebakerylv@gmail.com";
 
     $headers = "From: $emailFrom \r\n";
 
     $hearders .= "Reply-to: $email \r\n";
 
-    mail($to, $emailSubject, $emailBody, $headers);
+    mail($to, $email_subject, $email_body, $headers);
 
-    headers("Location: index.html")
+    headers("Location: index.html");
 
 
 ?>
