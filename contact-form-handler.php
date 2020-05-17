@@ -1,25 +1,49 @@
 <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $msg = $_POST['message'];
 
-    $email_from = 'sunvillebakerylv@gmail.com';
+$errors = '';
+$myemail = 'yourname@website.com';//<-----Put Your email address here.
+if(empty($_POST['name'])  || 
+   empty($_POST['email']) || 
+   empty($_POST['message']))
+{
+    $errors .= "\n Error: all fields are required";
+}
 
-    $email_subject = "New Form Submission";
+$name = $_POST['name']; 
+$email_address = $_POST['email']; 
+$message = $_POST['message']; 
 
-    $email_body = "User Name: $name.\n".
-                    "User Email: $email.\n".
-                        "User Message: $msg.\n";
+if (!preg_match(
+"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
+$email_address))
+{
+    $errors .= "\n Error: Invalid email address";
+}
 
-    $to = "sunvillebakerylv@gmail.com";
+if( empty($errors))
 
-    $headers = "From: $emailFrom \r\n";
+{
 
-    $hearders .= "Reply-to: $email \r\n";
+$to = $myemail;
 
-    mail($to, $email_subject, $email_body, $headers);
+$email_subject = "Contact form submission: $name";
 
-    headers("Location: index.html");
+$email_body = "You have received a new message. ".
 
+" Here are the details:\n Name: $name \n ".
+
+"Email: $email_address\n Message \n $message";
+
+$headers = "From: $myemail\n";
+
+$headers .= "Reply-To: $email_address";
+
+mail($to,$email_subject,$email_body,$headers);
+
+//redirect to the 'thank you' page
+
+header('Location: contact-form-thank-you.html');
+
+}
 
 ?>
