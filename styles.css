@@ -8,7 +8,7 @@ body {
 
 header {
     background: black;
-    background-image: url("images/background.jpg");
+    background-image: url("images/background2.jpg");
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -171,13 +171,12 @@ footer {
 @media screen and (max-width: 709px) {
 
     header{
-        background-image: url("images/background.jpg");
-        /* background-position: 0 -220px; */
-        background-position: center center;
+        background-image: url("images/background2.jpg");
+        background-position: -300px 0;
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        height: 800px;
+        height: 660px;
     }
     header .mobile {
         display: inline-block;
