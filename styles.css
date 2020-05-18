@@ -15,7 +15,7 @@ header {
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 700px;
-    padding: 0px;
+    padding: 1px;
     text-align: center;
 }
 
@@ -23,8 +23,12 @@ header a {
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 40px;
-    color: gray;
+    color: white;
     
+}
+
+header a:hover {
+    color: rgba(172, 184, 3, 0.486);
 }
 
 header .mobile {
@@ -32,7 +36,7 @@ header .mobile {
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
 }
@@ -50,7 +54,7 @@ nav li {
 }
 
 .currentPage {
-    color: rgb(184, 181, 3);
+    color: rgb(172, 184, 3);
 }
 
 .logo a {
@@ -62,7 +66,7 @@ nav li {
     width: 300px;
     height: 100px;
     text-indent: -9999999em;
-    display: inline-block;
+    display: inline-block;  
 }
 
 h1 {
