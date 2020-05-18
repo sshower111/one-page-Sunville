@@ -193,6 +193,7 @@ footer a {
         font-size: 10px;
         background-image: url("images/background2.jpg");
         background-position: -300px 0;
+        background-position: center;
         background-size: auto;
         background-attachment: fixed;
         background-repeat: no-repeat;
