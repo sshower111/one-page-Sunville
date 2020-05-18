@@ -9,29 +9,49 @@
     <header>
         <nav>
             <ul>
-                <li><a class="currentPage" href="index">Home</a></li>
-                <li><a href="coming-soon-page">Menu</a></li>
-                <li class="mobile"><a href="location#map">Location</a></li>
-                <li class="mobile"><a href="contact#contact_form">Contact</a></li>
-                <li class="logo"><a href="index">Sunville Bakery Logo</a></li>
-                <li class="desktop"><a href="location#map">Location</a></li>
-                <li class="desktop"><a href="contact#contact_form">Contact</a></li>
+                <li><a class="currentPage" href="index.html">Home</a></li>
+                <li><a href="coming-soon-page.html">Menu</a></li>
+                <li class="mobile"><a href="#map">Location</a></li>
+                <li class="mobile"><a href="#contact_form">Contact</a></li>
+                <li class="logo"><a href="index.html">Sunville Bakery Logo</a></li>
+                <li class="desktop"><a href="#map">Location</a></li>
+                <li class="desktop"><a href="#contact_form">Contact</a></li>
                </ul>
         </nav>
         <h2 style="color: white; text-align: center; margin-top: 10em;">Authentic Asian style Breads,
             Pastries, and More.
         </h2>
     </header>
-    <p style=" margin-bottom: 10%; font-style: italic; text-align: center; white-space: pre-wrap;">We offer French, Chinese, and Italian breads, 
-        mouth watering pastries, 
-        chocolate and fruit sensations, 
-        and seasonal creations such as fruit cakes, moon cakes, and gingerbread treats. 
+    <h2 style="rgba(255, 0, 0, 0.699) margin-top: 5%;">About Us</h2>
+    <p style="line-height: 2; margin: 5% 10% 10%; font-style: italic; text-align: center;">
+        We offer French, Chinese, and Italian breads, mouth watering pastries, 
+        chocolate and fruit sensations, and seasonal creations such as fruit cakes, 
+        moon cakes, and gingerbread treats. 
         All items are available in single-item and party tray quantities. 
-        We use only the finest ingredients and the freshest fruits in our creations.</p>
-    <h3 style="text-align: center; color: rgba(255, 0, 0, 0.699);">HOURS</h3>
+        <br>We use only the finest ingredients and the freshest fruits in our creations.</p>
+    <h3 style="text-align: center; color: rgba(255, 0, 0, 0.699);">Hours</h3>
     <p style="color: black; text-align: center; margin-bottom: 5%;">
         Monday to Sunday<strong>&nbsp;</strong>&nbsp;8 am – 8 pm
     </p>
+    <h3 id="map" style="padding-top: 22px; color: rgba(255, 0, 0, 0.699); text-align: center;">Find Us</h3>
+    <p style=" margin-bottom: 30px; text-align: center;">
+        4053 Spring Mountain Road, Las Vegas, NV, 89102
+    </p>
+    <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.6610182771356!2d-115.19607758436148!3d36.126115413051004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c6a664191e97%3A0xd3862e43de4a271a!2sSunville%20Bakery%20Inc!5e0!3m2!1sen!2sus!4v1589522908202!5m2!1sen!2sus" 
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <h2 style="margin-top: 50px; text-align: center; color: rgba(255, 0, 0, 0.699);">Contact Us</h2>
+    <div class="border"></div>
+    <div style="margin: 55px 0px;">
+        <form id="contact_form" action="contact-form-handler.php" class="contact-form" method="POST">
+            <input name="name" type="text" class="contact-form-text" placeholder="Your Name">
+            <input name="email" type="text" class="contact-form-text" placeholder="Your Email">
+            <textarea name="message" class="contact-form-text" placeholder="Your Message"></textarea>
+            <div style="text-align: center;"><input type="button" class="contact-form-btn" value="Send"></div>
+        </form>
+    </div>
     <footer>4053 Spring Mountain Road, Las Vegas, NV, 89102 • <a class="footerPhone" href="tel:7028899887">702-889-9887</a> • <a class="footerEmail" href="mailto:sunvillebakerylv@gmail">sunvillebakerylv@gmail.com</a></footer>
 </body>
 </html>

@@ -4,6 +4,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: Avenir, Georgia, Helvetica, Arial, sans-serif;
+    text-align: center;
 }
 
 header {
@@ -13,8 +14,8 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 660px;
-    padding: 20px;
+    height: 700px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -23,17 +24,24 @@ header a {
     text-transform: uppercase;
     margin-top: 40px;
     color: gray;
+    
 }
 
 header .mobile {
     display: none;
 }
 
+nav {
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    
+    height: 100px;
 }
 
 nav li {
@@ -42,7 +50,7 @@ nav li {
 }
 
 .currentPage {
-    color: rgb(150, 184, 3);
+    color: rgb(184, 181, 3);
 }
 
 .logo a {
@@ -50,10 +58,10 @@ nav li {
     background-size: 300px;
     background-repeat: no-repeat;
     position: relative;
-    top: -45px;
+    top: -42px;
     width: 300px;
     height: 100px;
-    text-indent: -99999999px;
+    text-indent: -9999999em;
     display: inline-block;
 }
 
@@ -133,17 +141,18 @@ textarea.contact-form-text {
 .contact-form-btn {
     float: right;
     border: 0;
-    background: gray;
+    background: black;
     color: white;
     padding: 12px 50px;
     cursor: pointer;
     transition: 0.5s;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    overflow: hidden;
     width: 600px;
 }
 
 .contact-form-btn:hover {
-    background: black;
+    background: gray;
 }
 
 footer {
@@ -188,8 +197,7 @@ footer {
 
 .map-responsive{
     overflow: hidden;
-    margin: -20px 20% 0px 20%;
-    padding: 20%;
+    padding: 22%;
     position: relative;
 
 }
@@ -199,4 +207,8 @@ footer {
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+html {
+    scroll-behavior: smooth;
 }
