@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>Sunville Bakery</title>
 </head>
     <body>
@@ -13,17 +13,17 @@
                     <li><a class="currentPage" href="index">Home</a></li>
                     <li><a href="coming-soon-page">Menu</a></li>
                     <li class="mobile"><a href="#map">Location</a></li>
-                    <li class="mobile"><a href="#contact_form">Contact</a></li>
+                    <li class="mobile"><a href="#contact_us">Contact</a></li>
                     <li class="logo"><a href="index">Sunville Bakery Logo</a></li>
                     <li class="desktop"><a href="#map">Location</a></li>
-                    <li class="desktop"><a href="#contact_form">Contact</a></li>
+                    <li class="desktop"><a href="#contact_us">Contact</a></li>
                 </ul>
             </nav>
             <h2 style="color: white; text-align: center; margin-top: 15em;">
                 Authentic Asian style Breads,Pastries, and More.
             </h2>
         </header>
-        <h2 style="color: rgb(227, 194, 73); margin-top: 2%;">About Us</h2>
+        <h2 style="margin-top: 8%;">About Us</h2>
 
             <p class="about-us">
                 We offer French, Chinese, and Italian breads, mouth watering pastries, 
@@ -33,13 +33,13 @@
                 <br>We use only the finest ingredients and the freshest fruits in our creations.
             </p>
 
-        <h2 style="text-align: center; color: rgba(227, 194, 73);">Hours</h2>
+        <h2>Hours</h2>
         <p class="hours" style="color: black; text-align: center; margin-bottom: 2%;">
             Monday to Sunday<strong>&nbsp;</strong>&nbsp;8 am – 8 pm
 
         </p>
-        <div id="map" style="padding-top: 6%">
-            <h2 style="color: rgb(227, 194, 73); text-align: center;">Find Us</h2>
+        <div id="map" style="padding-top: 10%">
+            <h2>Find Us</h2>
             <p class="address" style=" margin-bottom: 3%; text-align: center;">
                 4053 Spring Mountain Road, Las Vegas, NV, 89102
             </p>
@@ -49,14 +49,14 @@
             </div>
         </div>
 
-        <h2 style="margin-top: 50px; text-align: center; color: rgb(227, 194, 73);">Contact Us</h2>
+        <h2 id="contact_us" style="padding-top: 12%; margin-top: 50px;">Contact Us</h2>
         <div class="border"></div>
         <div style="margin: 55px 0px;">
             <form id="contact_form" action="contact-form-handler.php" class="contact-form" method="POST">
                 <input name="name" type="text" class="contact-form-text" placeholder="Your Name">
                 <input name="email" type="text" class="contact-form-text" placeholder="Your Email">
                 <textarea name="message" class="contact-form-text" placeholder="Your Message"></textarea>
-                <div style="text-align: center;"><input type="button" class="contact-form-btn" value="Send"></div>
+                <div><input style="text-align: center;" type="button" class="contact-form-btn" value="Send"></div>
             </form>
         </div>
         <footer>
