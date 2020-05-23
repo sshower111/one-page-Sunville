@@ -3,18 +3,20 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta name="format-detection" content="telephone=no">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sunville Bakery</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </head>
     <body>
         <header>
             <nav>
                 <ul>
-                    <li><a class="currentPage" href="index">Home</a></li>
-                    <li><a href="coming-soon-page">Menu</a></li>
+                    <li><a class="currentPage" href="/">Home</a></li>
+                    <li><a href="coming-soon">Menu</a></li>
                     <li class="mobile"><a href="#map">Location</a></li>
                     <li class="mobile"><a href="#contact_us">Contact</a></li>
-                    <li class="logo"><a href="index">Sunville Bakery Logo</a></li>
+                    <li class="logo"><a href="/">Sunville Bakery Logo</a></li>
                     <li class="desktop"><a href="#map">Location</a></li>
                     <li class="desktop"><a href="#contact_us">Contact</a></li>
                 </ul>
@@ -51,12 +53,18 @@
 
         <h2 id="contact_us" style="padding-top: 12%; margin-top: 50px;">Contact Us</h2>
         <div class="border"></div>
+        <div id="error_message"></div>
         <div style="margin: 55px 0px;">
-            <form id="contact_form" action="contact-form-handler.php" class="contact-form" method="POST">
-                <input name="name" type="text" class="contact-form-text" placeholder="Your Name">
-                <input name="email" type="text" class="contact-form-text" placeholder="Your Email">
-                <textarea name="message" class="contact-form-text" placeholder="Your Message"></textarea>
-                <div><input style="text-align: center;" type="button" class="contact-form-btn" value="Send"></div>
+            <form id="contact_form" class="contact-form" 
+            onsubmit="return validation()">
+                <input id="name" type="text" class="contact-form-text" placeholder="Your Name">
+                <input id="email" type="text" class="contact-form-text" placeholder="Your Email" pattern= "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" 
+                oninvalid="this.setCustomValidity('Please Enter a Vaild Email')"
+                onchange="try{setCustomValidity('')}catch(e){}"
+                oninput="setCustomValidity(' ')"
+                required>
+                <textarea id="message" class="contact-form-text" placeholder="Your Message" required></textarea>
+                <input type="submit" class="contact-form-btn" value="Send">
             </form>
         </div>
         <footer>
