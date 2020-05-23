@@ -257,6 +257,7 @@ footer a {
     header{
         font-size: 10px;
         background-image: url("images/background2.jpg");
+        width: 100%;
         background-position: -300px 0;
         background-position: center;
         background-size: auto;
